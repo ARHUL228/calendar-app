@@ -1,0 +1,127 @@
+.calendar-container {
+   padding: 20px;
+   background-color: #f5f7fa;
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+ }
+ 
+ .rbc-calendar {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: white;
+   border-radius: 8px;
+   border: 1px solid #ddd;
+ }
+ 
+ .rbc-toolbar {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #f0f1f4;
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ .rbc-toolbar button {
+   background-color: transparent;
+   border: none;
+   color: #3174ad;
+   font-size: 16px;
+   cursor: pointer;
+   padding: 8px 12px;
+   border-radius: 4px;
+ }
+ 
+ .rbc-toolbar button:hover {
+   background-color: #e0e3e8;
+ }
+ 
+ .rbc-toolbar-label {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+ }
+ 
+ .rbc-month-view {
+   padding: 20px;
+ }
+ 
+ .rbc-month-row {
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ .rbc-day-bg {
+   background-color: white;
+   border-right: 1px solid #ddd;
+ }
+ 
+ .rbc-day-bg:nth-child(7n) {
+   border-right: none;
+ }
+ 
+ .rbc-date-cell {
+   text-align: right;
+   padding: 5px;
+   font-weight: bold;
+   color: #666;
+ }
+ 
+ .rbc-today {
+   background-color: #f0f1f4 !important;
+ }
+ 
+ .rbc-event {
+   background-color: #3174ad;
+   color: white;
+   padding: 2px 4px;
+   border-radius: 4px;
+   font-size: 12px;
+ }
+ 
+ .rbc-event:hover {
+   background-color: #265a8f;
+ }
+ 
+ .rbc-event-content {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+ 
+ .rbc-time-content {
+   border-top: 1px solid #ddd;
+ }
+ 
+ .rbc-time-slot {
+   background-color: white;
+ }
+ 
+ .rbc-time-content > * + * {
+   border-left: 1px solid #ddd;
+ }
+ 
+ .rbc-time-gutter,
+ .rbc-header {
+   background-color: #f7f7f7;
+   border-right: 1px solid #ddd;
+   text-align: center;
+   font-weight: bold;
+   color: #666;
+ }
+ 
+ .rbc-event-continues-after,
+ .rbc-event-continues-prior {
+   display: none;
+ }
+ 
+ /* Custom styling for event colors */
+ .custom-event-color {
+   border-radius: 4px;
+   color: white;
+   padding: 2px 6px;
+   font-size: 12px;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+ }
